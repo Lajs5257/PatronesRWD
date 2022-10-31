@@ -50,3 +50,23 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 480px) {
+    .column-drop-css{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    .segunda-sidebar{
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .column-drop-css{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .segunda-sidebar{
+        grid-column: 3/4;
+    }
+}
